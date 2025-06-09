@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Portfólio</title>
+
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600;800&display=swap" rel="stylesheet" />
+
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+
+    body {
+      font-family: 'Montserrat', sans-serif;
+      background-color: #fff;
+      padding: 40px;
+      color: #222;
+    }
+
+    .container {
+      max-width: 800px;
+      margin: 0 auto;
+      text-align: center;
+    }
+
+    header {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      margin-bottom: 40px;
+    }
+
+    .nome h3 {
+      font-size: 20px;
+      font-weight: 800;
+    }
+
+    .nome2 h5 {
+      font-size: 14px;
+      font-weight: 400;
+      color: #555;
+      margin-top: 8px;
+    }
+
+    .titulo {
+      font-size: 48px;
+      font-weight: 800;
+      margin-top: 30px;
+      color: black;
+    }
+
+    .titulo span {
+      background-color: #FFD000;
+      padding: 4px 8px;
+      display: inline-block;
+    }
+
+    .foto img {
+      width: 60%;
+      border-radius: 8px;
+      margin-top: 40px;
+      box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+    }
+
+    .borda-superior-esquerda {
+      display: inline-block;
+      padding: 13px 20px;
+      border-top: 4px solid #51514f;
+      border-left: 4px solid #464646;
+      border-radius: 44px 0 0 8px;
+      text-align: left;
+      margin-bottom: 20px;
+    }
+
+    .borda-inferior-direita {
+      display: inline-block;
+      padding: 13px 50px;
+      border-bottom: 4px solid #787878;
+      border-right: 4px solid #606060;
+      border-radius: 0 0 44px 8px;
+      margin-top: 20px;
+      text-align: right;
+    }
+
+    .proximo {
+      margin-left: 85%;
+    }
+  </style>
+</head>
+
+<body>
+  <div class="container">
+
+    <header>
+      <section class="borda-superior-esquerda">
+        <div class="nome">
+          <h3>Natan Luis Pereira dos Santos</h3>
+        </div>
+        <div class="nome2">
+          <h5>Programador e estudante pela Cesar School</h5>
+        </div>
+        <nav>
+          <p><a href="https://www.linkedin.com/in/natanluis" target="_blank">Linkedin</a></p>
+          <p><a href="https://instagram.com/natanluis._" target="_blank">Instagram</a></p>
+          <p><a href="https://github.com/Natas081" target="_blank">Github</a></p>
+        </nav>
+      </section>
+
+      <section class="borda-inferior-direita">
+        <div class="titulo">
+          <span>Portfólio</span>
+        </div>
+      </section>
+    </header>
+
+    <main>
+      <a class="proximo" href="about.html"><button>About me</button></a>
+
+      <section class="foto">
+        <img src="pfp.png" alt="Foto de Natan" />
+      </section>
+    </main>
+  </div>
+</body>
+</html>
