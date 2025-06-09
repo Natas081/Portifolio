@@ -1,21 +1,111 @@
 <!DOCTYPE html>
 <html lang="pt-br">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Animal Quest</title>
-    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600;800&display=swap" rel="stylesheet" />
-    <style>
-     * {
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Animal Quest</title>
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600;800&display=swap" rel="stylesheet" />
+  <style>
+    * {
       margin: 0;
       padding: 0;
       box-sizing: border-box;
-     }
+    }
 
+    body {
+      font-family: 'Montserrat', sans-serif;
+      background-color: #fff;
+      color: #222;
+      line-height: 1.6;
+    }
 
-    </style>
+    .container {
+      max-width: 1000px;
+      margin: 0 auto;
+      padding: 40px 20px;
+    }
+
+    header {
+      text-align: center;
+      margin-bottom: 50px;
+    }
+
+    .titulo span {
+      background-color: #FFD000;
+      padding: 20px 150px;
+      font-size: 42px;
+      font-weight: 800;
+      display: inline-block;
+      border-radius: 12px;
+      box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+    }
+
+    .content {
+      display: flex;
+      gap: 40px;
+      flex-wrap: wrap;
+    }
+
+    .coluna-esquerda,
+    .coluna-direita {
+      flex: 1;
+      min-width: 300px;
+    }
+
+    .coluna-direita h2 {
+      font-size: 24px;
+      color: #0026d1;
+      margin-bottom: 10px;
+    }
+
+    .coluna-direita p {
+      font-size: 16px;
+      color: #333;
+    }
+
+    .grid-imagens {
+      display: grid;
+      grid-template-columns: repeat(3, 1fr); 
+      gap: 10px;
+    }
+
+    .grid-imagens img {
+      width: 100%;
+      height: auto;
+      border-radius: 8px;
+      box-shadow: 0 2px 6px rgba(0,0,0,0.1);
+    }
+
+  </style>
 </head>
 <body>
-    
+  <div class="container">
+    <header>
+      <div class="titulo">
+        <span>Animal Quest</span>
+      </div>
+    </header>
+
+    <div class="content">
+      <div class="coluna-esquerda">
+        <div class="grid-imagens">
+          <img src="AQpronto.jpeg" alt="Imagem do jogo 1">
+          <img src="Animal.jpeg" alt="Imagem 2">
+          <img src="testando.jpeg" alt="Imagem 3">
+          <img src="Teste.jpeg" alt="Imagem 4">
+          <img src="techdesign.jpeg" alt="Imagem 5">
+          <img src="SITEAQ.jpeg" alt="Imagem 6">
+        </div>
+      </div>
+
+      <div class="coluna-direita">
+        <h2>Sobre o Projeto</h2>
+        <p>
+          O "Animal Quest" é um jogo interativo educativo voltado para o público infantil com sindrome de down. Nele, os jogadores associam sons e imagens de animais,
+          desenvolvendo memória, atenção e aprendizado de forma lúdica por meio do jogo. Utilizamos Python e Arduino com a extensão Pyserial e Pygame para conserguirmos conectar o python ao arduino, utilizamos 1 Arduino mega e 3 Unos, alem de que formamos a base do nossso jogo pelo site Scratch, desenvolvemos o jogo em busca da inclusão das pessoas com sindrome de down no ambiente tecnologico para criar uma experiência divertida e acessível. Para mais informações, leia o QR code que leva ao nosso site.
+        </p>
+      </div>
+    </div>
+  </div>
 </body>
 </html>
