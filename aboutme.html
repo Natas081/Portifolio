@@ -1,49 +1,137 @@
 <!DOCTYPE html>
 <html lang="pt-br">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>about me</title>
-    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600;800&display=swap" rel="stylesheet" />
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>About Me</title>
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600;800&display=swap" rel="stylesheet" />
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
 
+    body {
+      font-family: 'Montserrat', sans-serif;
+      background-color: #fff;
+      color: #222;
+      line-height: 1.6;
+    }
 
+    .container {
+      max-width: 1000px;
+      margin: 0 auto;
+      padding: 40px 20px;
+    }
 
-    <style>
+    header {
+      text-align: center;
+      margin-bottom: 50px;
+    }
 
-        .container{
-        max-width: 800px;
-        margin: 0 auto;
-        text-align: center;
+    .titulo span {
+      background-color: #FFD000;
+      padding: 20px 60px;
+      font-size: 42px;
+      font-weight: 800;
+      display: inline-block;
+      border-radius: 12px;
+      box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+    }
 
-        }
-        .titulo span {
-            margin-top: 75px;
-            padding-top: 10%;
-            font-size: 40px;
-            font-weight: 999;
-            display: inline-block;
-            font-family: 'Montserrat', sans-serif;
-            background-color: #FFD000; /* amarelo */
-            padding: 10px 20px;
-            border-radius: 80px;
-            box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
-        }
+    .section {
+      margin-bottom: 40px;
+    }
 
+    .section h2 {
+      font-size: 18px;
+      font-weight: 600;
+      color: #2300d1;
+      border-bottom: 2px solid #dae777;
+      display: inline-block;
+      margin-bottom: 10px;
+    }
 
+    .section p,
+    .section ul,
+    .section li {
+      font-size: 15px;
+      color: #333;
+    }
 
-    </style>
+    .two-columns {
+      display: flex;
+      gap: 40px;
+      flex-wrap: wrap;
+    }
+
+    .column {
+      flex: 1;
+      min-width: 300px;
+    }
+
+    ul {
+      padding-left: 20px;
+    }
+  </style>
 </head>
 <body>
-    <div class="container">
-
+  <div class="container">
     <header>
-    <div class="titulo">
-        
-        <span>About me</span>
-    
-    
-    </div>
+      <div class="titulo">
+        <span>ABOUT ME</span>
+      </div>
     </header>
+
+    <div class="two-columns">
+      <div class="column">
+        <div class="section">
+          <h2>PERFIL</h2>
+          <p>Sou um estudante de Ciencas da Computação pela Cesar School, atualmente moro em Recife - PE e tenho 18 anos. Gosto de programar, conversar e socializar e alem de tudo estou em busca de mais formas de aprender.</p>
+        </div>
+
+        <div class="section">
+          <h2>Habilidades</h2>
+          <ul>
+            <li>Conhecimento em HTML, CSS, JavaScript e Python</li>
+            <li>Facilidade de comunicação e trabalho em equipe</li>
+            <li>Boa atenção aos detalhes e prazos</li>
+          </ul>
+        </div>
+
+        <div class="section">
+          <h2>CONTATO</h2>
+          <p>(+55) 81 98959-4090</p>
+          <p>nlps@cesar.school</p>
+          <p>Recife - PE</p>
+        </div>
+      </div>
+
+      <div class="column">
+        <div class="section">
+          <h2>PROJETOS FEITOS</h2>
+          <p><strong>Animal Quest!</strong><br>
+          Jan 2025 - Maio 2025<br>
+          Desenvolvimento de um jogo portatil direcionado a crianças com sindrome de down, <a href="projeto1.html">clique aqui</a> para saber mais</p>
+
+          <p><strong>Calculadora funcional</strong><br>
+          ABRIL 2025<br>
+          Calculadora funcional feita completamente em HTML, CSS e JS, <a href="/projeto2.html">clique aqui</a> para saber mais.</p>
+        </div>
+
+        <div class="section">
+          <h2>FORMAÇÃO ACADÊMICA</h2>
+          <p><strong>CESAR School</strong><br>
+          Curso Bacharelado de Ciencas da computação.<br>
+          Conclusão prevista: 2028</p>
+
+          <p><strong>Ensino Médio Completo - CFI</strong><br>
+            <br>
+          2022 - 2024</p>
+        </div>
+      </div>
     </div>
+  </div>
 </body>
 </html>
