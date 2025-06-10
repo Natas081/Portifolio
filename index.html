@@ -89,6 +89,13 @@
     .proximo {
       margin-left: 85%;
     }
+    .butao{
+      background-color: rgb(255, 228, 23);
+      color: #080808;
+      border-radius: 5px;
+      font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+      font-size: large;
+    }
   </style>
 </head>
 
@@ -123,7 +130,7 @@ document.addEventListener('DOMContentLoaded', updateVisitCount);
           <p><a href="https://www.linkedin.com/in/natanluis" target="_blank">Linkedin</a></p>
           <p><a href="https://instagram.com/natanluis._" target="_blank">Instagram</a></p>
           <p><a href="https://github.com/Natas081" target="_blank">Github</a></p>
-          <p>Saiba mais de mim aqui: <a href="aboutme.html">About me</a></p>
+          <p>Saiba mais de mim aqui: <button class="butao" onclick="window.location.href='aboutme.html'">about me</button></p>
           <p>Visitas: <span id="visit-count">0</span></p>
         </nav>
       </section>
