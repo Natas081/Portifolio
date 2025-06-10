@@ -92,7 +92,23 @@
   </style>
 </head>
 
+
+
+<script>
+function updateVisitCount() {
+  let count = localStorage.getItem('visitCount') || 0;
+  count = parseInt(count) + 1;
+  localStorage.setItem('visitCount', count);
+  document.getElementById('visit-count').textContent = count;
+}
+
+document.addEventListener('DOMContentLoaded', updateVisitCount);
+</script>
+
+
+
 <body>
+
   <div class="container">
 
     <header>
@@ -108,6 +124,7 @@
           <p><a href="https://instagram.com/natanluis._" target="_blank">Instagram</a></p>
           <p><a href="https://github.com/Natas081" target="_blank">Github</a></p>
           <p>Saiba mais de mim aqui: <a href="aboutme.html">About me</a></p>
+          <p>Visitas: <span id="visit-count">0</span></p>
         </nav>
       </section>
 
