@@ -12,3 +12,5 @@ as linguagens usadas são Javascript, HTML 5 e CSS.
 demorei cerca de 3 dias para realizar o projeto todo, sendo o primeiro dia o arquivo index, o segundo foi o about me e as duas partes de projetos e por fim no ultimo dia so coloquei a função em java + botões e algumas mudanças esteticas.
 
 o trabalho foi muito divertido de fazer e aprendi diversas coisas de CSS e HTML pelo caminho, o projeto foi feito unicamente por Natan.
+
+O portifolio foi inspirado em alguns que vi no Google
